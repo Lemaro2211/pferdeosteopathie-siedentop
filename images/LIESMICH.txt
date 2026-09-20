@@ -1,0 +1,24 @@
+Hier kommen dein Logo und deine Fotos hinein. Die Seite erkennt sie automatisch.
+
+Dateinamen (genau so, klein geschrieben, ohne Leerzeichen):
+
+  logo.svg         Dein Logo als SVG oder (alternativ) als logo.png mit transparentem Hintergrund.
+                   Es ersetzt automatisch das Zeichen links oben in der Kopfzeile
+                   und das Browser-Symbol (Favicon). Ist das Logo sehr breit
+                   (enthält es schon den Schriftzug), wird der Text daneben ausgeblendet.
+
+Fotos (Endung .jpg, .jpeg, .png oder .webp, beliebig gemischt):
+
+  flyer            Flyer im Bereich "Energiearbeit und Tierkommunikation" (Hoch- oder Querformat,
+                   Endung .jpg, .jpeg, .png oder .webp). Ein Klick vergrößert ihn.
+  hero             Großes Foto oben auf der Startseite (Hochformat, ca. 1200 x 1500 Pixel)
+  melanie          Portrait im Bereich "Über mich" (Hochformat, ca. 1000 x 1250 Pixel)
+  galerie-1        Galerie-Bilder, lückenlos durchnummeriert:
+  galerie-2        galerie-1, galerie-2, galerie-3 ... (bis zu 40 Bilder),
+  galerie-3        jeweils mit einer der Endungen oben, z. B. galerie-1.jpeg
+
+Tipps:
+  - Bilder vorher verkleinern (Breite ca. 1600 Pixel, unter 500 KB pro Bild),
+    sonst lädt die Seite auf dem Handy langsam.
+  - Ohne Fotos bleibt die gezeichnete Landschaft sichtbar und der
+    Menüpunkt "Galerie" wird automatisch ausgeblendet.
