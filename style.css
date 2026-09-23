@@ -771,30 +771,8 @@ a:hover {
   height: 1.6rem;
 }
 .service--main {
-  display: flex;
-  flex-direction: column;
   border-radius: var(--radius-l);
   background: var(--salbei-karte);
-}
-.service--main .methods {
-  flex: none;
-}
-.service__note {
-  margin-top: auto;
-  padding: 1rem 1.2rem;
-  border-radius: var(--radius-s);
-  background: var(--honig);
-}
-.service__note strong {
-  display: block;
-  margin-bottom: 0.2rem;
-  font-weight: 700;
-}
-.service__note span {
-  display: block;
-  font-size: 0.95rem;
-  line-height: 1.45;
-  color: var(--tinte);
 }
 .service--riding {
   background: var(--hafer);
