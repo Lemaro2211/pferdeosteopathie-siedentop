@@ -139,14 +139,15 @@
   };
 
   /* ---------- Optionale Fotos: images/hero und images/melanie ---------- */
-  const placePhoto = async (name, target) => {
+  const placePhoto = async (name, target, caption) => {
     if (!target) return;
     const img = await probePhoto(name);
     if (!img) return;
     target.src = img.src;
     target.hidden = false;
+    if (caption) caption.hidden = false; // Bildunterschrift nur zeigen, wenn das Foto da ist
   };
-  placePhoto("hero", $("#hero-photo"));
+  placePhoto("hero", $("#hero-photo"), $("#hero-caption"));
   placePhoto("melanie", $("#about-photo"));
 
   /* ---------- Galerie als Diashow: images/galerie-1, galerie-2, ... ---------- */
