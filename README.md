@@ -22,3 +22,7 @@ Die Datei auf GitHub öffnen, auf das Stift-Symbol klicken, Text ändern, unten 
 ## Logo, Flyer und Fotos hinzufügen
 
 Das Logo als `logo.svg` (transparenter Hintergrund) und Fotos (jpg, jpeg, png oder webp) in den Ordner `images/` hochladen, genau wie in `images/LIESMICH.txt` benannt. Die Seite erkennt sie automatisch.
+
+## Lizenz
+
+© 2026 Melanie Siedentop. Alle Rechte vorbehalten. Dieses Repository enthält den Quellcode der Firmenwebseite und ist nicht zur Weiterverwendung freigegeben.
