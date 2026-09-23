@@ -39,6 +39,7 @@
   --workshop: #f3ebc9;
   --podcast-pfirsich: #f9d9c3;
   --podcast-zitrone: #f8f4c8;
+  --flieder: #e6dff0;
   --linie: rgba(36, 53, 43, 0.16);
 
   --radius-l: 36px;
@@ -782,6 +783,27 @@ a:hover {
 }
 .service--energy {
   background: var(--rose);
+}
+.service--trauma {
+  grid-column: 1 / -1;
+  background: var(--flieder);
+}
+.service--trauma p {
+  max-width: 42rem;
+}
+.service--trauma .service__icon {
+  margin-bottom: 0.9rem;
+}
+@media (min-width: 55.0625rem) {
+  .service--trauma {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: clamp(2rem, 4vw, 3.5rem);
+  }
+  .service--trauma .service__icon,
+  .service--trauma h3 {
+    grid-column: 1 / -1;
+  }
 }
 .service--workshops {
   grid-column: 1 / -1;
