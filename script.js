@@ -166,7 +166,7 @@
   const lbCount = $("#lightbox-count");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-  const INTERVAL = 5500; // Sekunden zwischen den Bildern (in Millisekunden)
+  const INTERVAL = 3000; // Sekunden zwischen den Bildern (in Millisekunden)
   const DOTS_MAX = 12; // ab so vielen Bildern werden statt Punkten nur Zahlen gezeigt
 
   const photos = [];
