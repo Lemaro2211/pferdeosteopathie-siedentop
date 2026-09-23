@@ -387,6 +387,32 @@
   loadFlyer("flyer", "#flyer", "#flyer-img", "#flyer-open");
   loadFlyer("flyer2", "#flyer2", "#flyer2-img", "#flyer2-open");
 
+  /* ---------- Podcasts nur auf dem Desktop in die linke Spalte verschieben ----------
+     CSS-Grid allein kann die Lücke unter dem kürzeren Fließtext nicht zuverlässig füllen,
+     weil die Zeilenhöhe an die höhere Nachbarspalte gekoppelt ist. Deshalb hängen wir die
+     beiden Podcast-Kästen bei ausreichender Breite tatsächlich in die Textspalte, und holen
+     sie auf dem Handy wieder an ihren ursprünglichen Platz zurück (nach der rechten Spalte). */
+  const energyText = $(".energy__text");
+  const energySide = $(".energy__side");
+  const podcast1 = $("#podcast-title")?.closest(".panel--podcast");
+  const podcast2 = $("#podcast2-title")?.closest(".panel--podcast-alt");
+  if (energyText && energySide && podcast1 && podcast2) {
+    const desktopQuery = window.matchMedia("(min-width: 55.0625rem)");
+    const placePodcasts = (e) => {
+      if (e.matches) {
+        podcast1.classList.add("panel--in-column");
+        podcast2.classList.add("panel--in-column");
+        energyText.append(podcast1, podcast2);
+      } else {
+        podcast1.classList.remove("panel--in-column");
+        podcast2.classList.remove("panel--in-column");
+        energySide.after(podcast1, podcast2);
+      }
+    };
+    placePodcasts(desktopQuery);
+    desktopQuery.addEventListener("change", placePodcasts);
+  }
+
   if (lightbox) {
     lightbox.addEventListener("close", () => {
       const wasSingle = lightbox.classList.contains("is-single");
