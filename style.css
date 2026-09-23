@@ -459,7 +459,7 @@ a:hover {
     font-size: 1.1rem;
   }
   .brand__tag {
-    display: none;
+    font-size: 0.72rem;
   }
   .brand__logo {
     max-width: 12rem;
