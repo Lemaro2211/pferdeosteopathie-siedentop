@@ -958,25 +958,18 @@ a:hover {
   align-items: start;
   gap: clamp(2rem, 5vw, 4.5rem);
 }
-.podcasts {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: stretch;
-  gap: 1.25rem;
-  margin-top: clamp(2.5rem, 5vw, 4rem);
-}
-.podcasts .panel {
+.panel--podcast,
+.panel--podcast-alt {
   display: flex;
   flex-direction: column;
 }
-.podcasts .panel__links {
+.panel--podcast .panel__links,
+.panel--podcast-alt .panel__links {
   margin-top: auto;
   padding-top: 1.25rem;
 }
-@media (max-width: 55rem) {
-  .podcasts {
-    grid-template-columns: minmax(0, 1fr);
-  }
+.panel--in-column {
+  margin-top: clamp(1.75rem, 3vw, 2.5rem);
 }
 .energy__text h3 {
   margin-top: 2rem;
