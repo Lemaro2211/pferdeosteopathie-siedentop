@@ -11,6 +11,7 @@ Fotos (Endung .jpg, .jpeg, .png oder .webp, beliebig gemischt):
 
   flyer            Flyer im Bereich "Energiearbeit und Tierkommunikation" (Hoch- oder Querformat,
                    Endung .jpg, .jpeg, .png oder .webp). Ein Klick vergrößert ihn.
+  flyer2           Zweiter Flyer, erscheint direkt darunter. Gleiche Regeln wie bei flyer.
   hero             Großes Foto oben auf der Startseite (Hochformat, ca. 1200 x 1500 Pixel)
   melanie          Portrait im Bereich "Über mich" (Hochformat, ca. 1000 x 1250 Pixel)
   galerie-1        Galerie-Bilder, lückenlos durchnummeriert:
