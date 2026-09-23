@@ -370,19 +370,22 @@
   }
   loadGallery();
 
-  /* ---------- Flyer: images/flyer (jpg, jpeg, png, webp) ---------- */
-  const flyer = $("#flyer");
-  const flyerImg = $("#flyer-img");
-  if (flyer && flyerImg) {
-    probePhoto("flyer").then((img) => {
-      if (!img) return;
-      flyerImg.src = img.src;
-      flyerImg.width = img.naturalWidth;
-      flyerImg.height = img.naturalHeight;
-      flyer.hidden = false;
+  /* ---------- Flyer: images/flyer, images/flyer2 (jpg, jpeg, png, webp) ---------- */
+  const loadFlyer = (name, figureId, imgId, openId) => {
+    const figure = $(figureId);
+    const img = $(imgId);
+    if (!figure || !img) return;
+    probePhoto(name).then((found) => {
+      if (!found) return;
+      img.src = found.src;
+      img.width = found.naturalWidth;
+      img.height = found.naturalHeight;
+      figure.hidden = false;
     });
-    $("#flyer-open").addEventListener("click", () => openSingle(flyerImg.src, flyerImg.alt));
-  }
+    $(openId).addEventListener("click", () => openSingle(img.src, img.alt));
+  };
+  loadFlyer("flyer", "#flyer", "#flyer-img", "#flyer-open");
+  loadFlyer("flyer2", "#flyer2", "#flyer2-img", "#flyer2-open");
 
   if (lightbox) {
     lightbox.addEventListener("close", () => {
