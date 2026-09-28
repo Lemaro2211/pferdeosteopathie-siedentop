@@ -149,6 +149,26 @@ a:hover {
   width: min(100% - 2 * var(--gutter), 1160px);
   margin-inline: auto;
 }
+
+/* ---------- Große Bildschirme: Seite wächst mit ----------
+   Ab etwa 1600 px Breite wird alles (Schrift, Abstände, Bilder) proportional größer
+   und der Inhalt breiter. Darunter (Laptop, Tablet, Handy) bleibt alles unverändert. */
+@media (min-width: 100rem) {
+  html {
+    font-size: 106.25%;
+  }
+  .wrap {
+    width: min(100% - 2 * var(--gutter), 1320px);
+  }
+}
+@media (min-width: 140rem) {
+  html {
+    font-size: 112.5%;
+  }
+  .wrap {
+    width: min(100% - 2 * var(--gutter), 1520px);
+  }
+}
 .wrap--narrow {
   width: min(100% - 2 * var(--gutter), 52rem);
 }
